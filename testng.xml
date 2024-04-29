@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="TestUtils.Listeners"></listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="eCommerceAppTestCases">
+        <classes>
+            <class name="Android.eCommerceApp.eCommerceAppTestCases">
+            </class>
+        </classes>
+    </test>
+    
+    <test name="iOS Inbuilt apps">
+        <classes>
+            <class name="iOS.InbuiltApp.InbuiltAppTestCases"></class>
+        </classes>
+    </test>
+
+    <test name="iOS Test App">
+        <classes>
+            <class name="iOS.TestApp.TestAppTestCases"></class>
+        </classes>
+    </test>
+
+    <test name="iOS UIKitCatalog App">
+        <classes>
+            <class name="iOS.UIKitCatalogApp.UIKitCatalogAppTestCases"></class>
+        </classes>
+    </test>
+</suite>
